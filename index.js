@@ -1,6 +1,8 @@
-function adicionar() {
-    let frutaSelecionada = document.getElementById("fruta").value
+
     let total = 0
+
+    function adicionar() {
+    let frutaSelecionada = document.getElementById("fruta").value
     
     switch(frutaSelecionada) {
 
@@ -35,4 +37,9 @@ function adicionar() {
 
 
     }
+}
+
+function finalizar() {
+    alert("Sua compra foi finalizada com sucesso, o total foi de: " + total + " reais.")
+    total = 0
 }
